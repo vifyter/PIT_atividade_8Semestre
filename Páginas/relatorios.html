@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionador</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <link rel="stylesheet" href="../CSS/style_pages.css">
+    <script type="module" src="../JS/nav_control.js"></script>
+    <script src="../JS/data.js"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <h1 class="header_h1" id="user"></h1>
+            <p class="header_p" id="acessos">Acessos:</p>
+        </section>
+        <section>
+            <h1 class="header_h1" id="sysdate"></h1>
+            <button onclick="back()" class="button-6">Logoff</button>
+        </section>
+    </header>
+    <main id="red_main">
+        <nav id="ger_nav_1">
+            <section class="ger_nav_sect">
+                <img src="#" alt="">
+                <p>Relatórios</p>
+            </section>
+            <section class="ger_nav_sect">
+                <img src="#" alt="">
+                <a href="redirecionador.html">Retornar</a>
+            </section>
+        </nav>
+        <section id="ger_sect_1">
+            <section id="cad_subsect">
+                <section id="cad_subsect">
+                    <div id="analise_bus"></div>
+                </section>
+            </section>
+            </section>
+        </section>
+        <footer>
+            <a href="https://www.facebook.com/viniciusmart2/" target="_blank"><img src="../imgs/facebook.png" alt="Facebook"></a>
+            <a href="https://discordapp.com/users/1048576758993125376" target="_blank"><img src="../imgs/discord.png" alt="Discord"></a>
+            <h1>Contatos</h1>
+            <a href="https://github.com/vifyter"><img src="../imgs/github.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/martinunis/?__pwa=1#"><img src="../imgs/instagram.png" alt="Instagram"></a>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            acess_control('relatorios');
+            chart_control('relatorio');
+            acessInfo();
+        });
+    </script>
+    <script src="../JS/charts.js"></script>
+</body>
+</html>

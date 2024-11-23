@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionador</title>
+    <link rel="stylesheet" href="../CSS/style_pages.css">
+    <script type="module" src="../JS/nav_control.js"></script>
+    <script src="../JS/data.js"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <h1 class="header_h1" id="user"></h1>
+            <p class="header_p" id="acessos">Acessos:</p>
+        </section>
+        <section>
+            <h1 class="header_h1" id="sysdate"></h1>
+            <button onclick="back()" class="button-6">Logoff</button>
+        </section>
+    </header>
+    <main id="red_main">
+        <section class="red_sect">
+            <img class="red_icons" src="../imgs/chat-arrow-grow.png" alt="Relatórios">
+            <button class="button-58" onclick="redirecionador('relatorio')">Acesso a relatórios</button>
+        </section>
+        <section class="red_sect">
+            <img class="red_icons" src="../imgs/desbloquear.png" alt="Rastreio">
+            <button class="button-58" onclick="redirecionador('cadastro')">Acesso a Cadastros</button>
+        </section>
+        <section class="red_sect">
+            <img class="red_icons" src="../imgs/marker.png" alt="Rastreio">
+            <button class="button-58" onclick="redirecionador('rastreio')">Acesso a Rastreio</button>
+        </section>
+        <section class="red_sect">
+            <img class="red_icons" src="../imgs/users-alt.png" alt="Gerência">
+            <button class="button-58" onclick="redirecionador('gerencia')">Acesso a Gerência</button>
+        </section>
+        <footer>
+            <a href="https://www.facebook.com/viniciusmart2/" target="_blank"><img src="../imgs/facebook.png" alt="Facebook"></a>
+            <a href="https://discordapp.com/users/1048576758993125376" target="_blank"><img src="../imgs/discord.png" alt="Discord"></a>
+            <h1>Contatos</h1>
+            <a href="https://github.com/vifyter"><img src="../imgs/github.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/martinunis/?__pwa=1#"><img src="../imgs/instagram.png" alt="Instagram"></a>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            acess_control('redirecionador');
+            acessInfo();
+        });
+    </script>
+</body>
+</html>

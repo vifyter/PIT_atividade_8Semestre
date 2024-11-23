@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Ônibus</title>
+    <link rel="stylesheet" href="../CSS/style_welcome.css">
+    <script src="../JS/data.js"></script>
+    <script type="module" src="../JS/recAcess.js"></script>
+</head>
+<body>
+    <section id="content_all">
+        <header>
+            <section>
+                <a href="../default.html"><img id="recAcess_img_home" src="../imgs/home.png" alt="home"></a>
+            </section>
+            <section>
+                <h1>Rec. Acesso</h1>
+            </section>
+            <section>
+                <h2>© Nunes</h2>
+            </section>
+        </header>
+        <main>
+            <section>
+                <h1>Rec. Via Gerente</h1>
+                <section>
+                    <h2>Usuário Gerente</h2>
+                    <input class="main-section-input" type="text" id="GerenUserRec">
+                    <h2>Senha</h2>
+                    <input class="main-section-input" type="password" id="GerenPassRec">
+                    <h2>Usuário (Alterar Senha)</h2>
+                    <input class="main-section-input" type="text" id="RecUserGer">
+                    <h2>Nova Senha</h2>
+                    <input class="main-section-input" type="text" id="RecPassGer">
+                </section>
+                <button type="button" onclick="recAcess(), analyses()">Alterar Senha</button>
+            </section>
+            <section>
+                <h1>Rec. Via Cod. Segurança</h1>
+                <section>
+                    <h2>Código Segurança</h2>
+                    <input class="main-section-input" type="password" id="RecKey">
+                    <h2>Usuário (Alterar Senha)</h2>
+                    <input class="main-section-input" type="text" id="RecUserKey">
+                    <h2>Nova Senha</h2>
+                    <input class="main-section-input" type="text" id="RecPassKey">
+                </section>
+                <button type="button" onclick="recAcess()">Alterar Senha</button>
+            </section>
+        </main>
+        <footer>
+            <a href="https://www.facebook.com/viniciusmart2/" target="_blank"><img src="../imgs/facebook.png" alt="Facebook"></a>
+            <a href="https://discordapp.com/users/1048576758993125376" target="_blank"><img src="../imgs/discord.png" alt="Discord"></a>
+            <p>Caso nenhum métodos seja possível solicite auxílio ao suporte</p>
+            <a href="https://github.com/vifyter"><img src="../imgs/github.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/martinunis/?__pwa=1#"><img src="../imgs/instagram.png" alt="Instagram"></a>
+        </footer>
+    </section>
+</body>
+</html>

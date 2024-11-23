@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionador</title>
+    <link rel="stylesheet" href="../CSS/style_pages.css">
+    <script type="module" src="../JS/nav_control.js"></script>
+    <script type="module" src="../JS/cad_acess.js"></script>
+    <script src="../JS/data.js"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <h1 class="header_h1" id="user"></h1>
+            <p class="header_p" id="acessos">Acessos:</p>
+        </section>
+        <section>
+            <h1 class="header_h1" id="sysdate"></h1>
+            <button onclick="back()" class="button-6">Logoff</button>
+        </section>
+    </header>
+    <main id="ger_main">
+        <nav id="ger_nav_1">
+            <section class="ger_nav_sect">
+                <img src="#" alt="">
+                <p>Cadastros</p>
+            </section>
+            <section class="ger_nav_sect">
+                <img src="#" alt="">
+                <a href="redirecionador.html">Retornar</a>
+            </section>
+        </nav>
+        <section id="ger_sect_1">
+            <section class="ger_subsect">
+                <h1>Lista de Usuários</h1>
+                <div id="excelTable"></div>
+            </section>
+            <section class="ger_subsect">
+                <section id="ger_subsect_cad">
+                    <h1>Alteração usuário</h1>
+                    <section id="ger_subsect_cad_inner">
+                        <p>Usuário a ser alterado</p>
+                        <input type="text" name="user" id="CreateUserGeren">
+                        <h1 style="font-size: 2em; margin: 5px;">Alterações</h1>
+                        <section id="ger_subsect_cad_inner_opc">
+                            <section>
+                                <p>Relatórios</p>
+                                <input type="checkbox" name="acessRel" id="acessRel">
+                            </section>
+                            <section>
+                                <p>Administrador</p>
+                                <input type="checkbox" name="admin" id="admin">
+                            </section>
+                            <section>
+                                <p>Rastreio</p>
+                                <input type="checkbox" name="acessRas" id="acessRas">
+                            </section>
+                            <section>
+                                <p>Cadatro</p>
+                                <input type="checkbox" name="acessCad" id="acessCad">
+                            </section>
+                        </section>
+                        <section>
+                            <p>E-mail</p>
+                            <input type="email" name="CreateEmailGeren" id="CreateEmailGeren">
+                            <p>Nova Senha</p>
+                            <input type="password" name="pass" id="CreatePasswordGeren">
+                        </section>
+                        <button onclick="updateUser('add')">Atualizar / Adicionar acessos</button>
+                        <button onclick="updateUser('del')">Atualizar / Remover acessos</button>
+                        <button onclick="updateUser('exc')">Excluír</button>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <footer>
+            <a href="https://www.facebook.com/viniciusmart2/" target="_blank"><img src="../imgs/facebook.png" alt="Facebook"></a>
+            <a href="https://discordapp.com/users/1048576758993125376" target="_blank"><img src="../imgs/discord.png" alt="Discord"></a>
+            <h1>Contatos</h1>
+            <a href="https://github.com/vifyter"><img src="../imgs/github.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/martinunis/?__pwa=1#"><img src="../imgs/instagram.png" alt="Instagram"></a>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            acess_control('cadastro');
+            acessInfo();
+        });
+     </script>
+</body>
+</html>
