@@ -203,6 +203,18 @@ header > section {
     min-height: 42px;
 }
 
+#ger_sect_1_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 90%;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 300px;
+  min-height: 710px;
+}
+
 .ger_nav_sect {
     margin: auto;
     padding: 10px;
@@ -210,16 +222,13 @@ header > section {
 }
 
 #ger_sect_1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    height: 90%;
-    width: 100%;
-    max-width: 1000px;
-    min-width: 300px;
-    min-height: 710px;
+  display: block;
+  margin: auto;
+  height: 90%;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 300px;
+  min-height: 710px;
 }
 
 .ger_subsect {
@@ -271,12 +280,13 @@ header > section {
   margin: auto;
   overflow-x: auto; /* Enables horizontal scrolling */
   max-width: 100%; /* Constrains the width */
+  height: 80%;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 0px 0;
 }
 
 th, td {
@@ -324,15 +334,18 @@ footer > a > img {
 
 /* Highcharts [START] */
 
-#container, #cad_subsect {
-    height: 80%;
+#container, .cad_subsect {
+    height: 600px;
     width: 100%;
     justify-content: space-around;
     margin: auto;
     display: flex;
 }
 
-
+#rel_cad_subsect {
+  display: block;
+  height: max-content;
+}
 
 .loading {
     margin-top: 10em;
